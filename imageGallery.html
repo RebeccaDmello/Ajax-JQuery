@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<!-- BOOTSTRAP CSS CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery Popper.js, and JavaScript plugins CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="jqajax.js"></script>
+	<script src="fetchapi.js"></script>
+
+</head>
+<body>
+	<form method="POST" action="/">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col col-lg-6" style = "margin: auto;">
+				<h1> The Image Gallery </h1>
+				</div>
+			</div>
+	
+			<div class = "row">
+				<div class = "col col-lg-4">
+					<input type="text" placeholder = "Enter your choice, e.g. Yellow Flower" class = "form-control" id ="input1" name ="input1" > 
+				</div>
+				
+				<div class = "col col-lg-4">
+					<input type="number" placeholder = "Enter number of images" class = "form-control" id ="input2" name ="input2" min="1" max="10"> 
+				</div>
+				
+				<div class = "col col-lg-4" style = "margin: auto;">
+					<button type="submit"> Click to see results </button>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+	</form>
+	<div class = "container-fluid" id = "imgdiv">
+			
+		<!--<img class = "img-fluid" src = "" alt = "oops!!" id = "imgs" style = "display: none;">-->
+	</div>
+</body>
+</html>
+
+
